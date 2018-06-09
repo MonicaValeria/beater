@@ -1,0 +1,462 @@
+/* ====================================================================
+   CSS3 EFFECTS
+   ==================================================================== */
+
+/* =================== Spinner ==================== */
+
+@keyframes spinnerRotate {
+    from    { transform: rotate(0deg);  }
+    to      { transform: rotate(359deg);}
+}
+
+@-webkit-keyframes spinnerRotate {
+    from  { transform: rotate(0deg); }
+    to    { transform: rotate(359deg); }
+}
+
+/* =================== Blur ==================== */
+
+.blur {
+	-webkit-filter: blur(7px);
+	-moz-filter: blur(7px);
+	-o-filter: blur(7px);
+	-ms-filter: blur(7px);
+	filter: blur(7px);
+}
+
+/* =================== Scale =================== */
+
+.photoScale {
+    animation-delay: .5s;
+    animation: photoScale .3s;
+    -o-animation: photoScale .3s;
+    -ms-animation: photoScale .3s;
+    -moz-animation: photoScale .3s;
+    -webkit-animation: photoScale .3s;
+}
+
+@keyframes photoScale {
+
+    from { transform: scale(.7,.7) }
+    to { transform: scale(1,1)}
+
+}
+
+@-o-keyframes photoScale {
+
+    from { transform: scale(.7,.7) }
+    to { transform: scale(1,1)}
+
+}
+
+@-ms-keyframes photoScale {
+
+    from { transform: scale(.7,.7) }
+    to { transform: scale(1,1)}
+
+}
+
+@-moz-keyframes photoScale {
+
+    from { transform: scale(.7,.7) }
+    to { transform: scale(1,1)}
+
+}
+
+@-webkit-keyframes photoScale {
+
+    from { transform: scale(.7,.7) }
+    to { transform: scale(1,1)}
+
+}
+
+/* ============== Menu Translate =============== */
+
+@keyframes MenuTranslate {
+
+	from { opacity:0; transform:translate(10px,0); }
+
+	80%	{ opacity:0; transform:translate(-40px,0); }
+
+	to { opacity:1;	transform:translate(-85px,0); }
+
+}
+
+@-moz-keyframes MenuTranslate {
+
+	from { opacity:0; transform:translate(10px,0); }
+
+	80%	{ opacity:0; transform:translate(-40px,0); }
+
+	to { opacity:1;	transform:translate(-85px,0); }
+
+}
+
+@-webkit-keyframes MenuTranslate {
+
+	from { opacity:0; transform:translate(10px,0); }
+
+	80%	{ opacity:0; transform:translate(-40px,0); }
+
+	to { opacity:1;	transform:translate(-85px,0); }
+
+}
+
+@-ms-keyframes MenuTranslate {
+
+	from { opacity:0; transform:translate(10px,0); }
+
+	80%	{ opacity:0; transform:translate(-40px,0); }
+
+	to { opacity:1;	transform:translate(-85px,0); }
+
+}
+
+@-o-keyframes MenuTranslate {
+
+	from { opacity:0; transform:translate(10px,0); }
+
+	80%	{ opacity:0; transform:translate(-40px,0); }
+
+	to { opacity:1;	transform:translate(-85px,0); }
+
+}
+
+/* ========== Fade In =========== */
+
+#panelDetailMusic, .panel-default, #panelAudioVideo, #music-details-panel, .bgCover, #activeCampaigns, #finishedCampaigns {
+    opacity: 0;
+    animation: fadeIn .6s forwards;
+    -o-animation: fadeIn .6s forwards;
+    -ms-animation: fadeIn .6s forwards;
+    -moz-animation: fadeIn .6s forwards;
+    -webkit-animation: fadeIn .6s forwards;
+
+}
+
+#panelDetailMusic {
+    animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 0.6s forwards;
+	-moz-animation: fadeIn 0.6s forwards;
+	-ms-animation: fadeIn 0.6s forwards;
+	-o-animation: fadeIn 0.6s forwards;
+	animation: fadeIn 0.6s forwards;
+}
+
+.fadeInFast {
+    -webkit-animation: fadeIn 0.4s forwards;
+	-moz-animation: fadeIn 0.4s forwards;
+	-ms-animation: fadeIn 0.4s forwards;
+	-o-animation: fadeIn 0.4s forwards;
+	animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ========== Fade Out =========== */
+
+.fadeOut {
+    -webkit-animation: fadeOut 0.3s forwards;
+	-moz-animation: fadeOut 0.3s forwards;
+	-ms-animation: fadeOut 0.3s forwards;
+	-o-animation: fadeOut 0.3s forwards;
+	animation: fadeOut 0.3s forwards;
+}
+
+.fadeOutfx {
+    opacity: 0;
+    display: none;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-o-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-ms-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* ========== Fade-In-Out =========== */
+
+@keyframes fadeInOut {
+    from { opacity: 0; }
+    10%  { opacity: 0; }
+    30%  { opacity: 1; }
+    80%  { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-o-keyframes fadeInOut {
+    from { opacity: 0; }
+    10%  { opacity: 0; }
+    30%  { opacity: 1; }
+    80%  { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-ms-keyframes fadeInOut {
+    from { opacity: 0; }
+    10%  { opacity: 0; }
+    30%  { opacity: 1; }
+    80%  { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeInOut {
+    from { opacity: 0; }
+    10%  { opacity: 0; }
+    30%  { opacity: 1; }
+    80%  { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeInOut {
+    from { opacity: 0; }
+    10%  { opacity: 0; }
+    30%  { opacity: 1; }
+    80%  { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* ========== User Photo Translate Small =========== */
+
+.user-photo-translate-small {
+	animation:UserPhotoTranslateSmall .4s forwards;
+	-webkit-animation:UserPhotoTranslateSmall .4s forwards;
+}
+
+@keyframes UserPhotoTranslateSmall
+{
+	from { transform:scale(1,1); }
+	to { transform:scale(.6,.6); margin:0 55px; }
+}
+@-moz-keyframes UserPhotoTranslateSmall
+{
+	from { transform:scale(1,1); }
+	to { transform:scale(.6,.6); margin:0 55px; }
+}
+@-ms-keyframes UserPhotoTranslateSmall
+{
+	from { transform:scale(1,1); }
+	to { transform:scale(.6,.6); margin:0 55px; }
+}
+@-o-keyframes UserPhotoTranslateSmall
+{
+	from { transform:scale(1,1); }
+	to { transform:scale(.6,.6); margin:0 55px; }
+}
+@-webkit-keyframes UserPhotoTranslateSmall
+{
+	from { transform:scale(1,1); }
+	to { transform:scale(.6,.6); margin:0 55px; }
+}
+
+/* ========== User Photo Translate Large =========== */
+
+.user-photo-translate-large {
+	animation:UserPhotoTranslateLarge .4s forwards;
+}
+
+@keyframes UserPhotoTranslateLarge
+{
+	from { transform:scale(.6,.6); margin:0px 55px; }
+	to	 { transform:scale(1,1); }
+}
+
+@-moz-keyframes UserPhotoTranslateLarge
+{
+	from { transform:scale(.6,.6); margin:0px 55px; }
+	to	 { transform:scale(1,1); }
+}
+
+@-ms-keyframes UserPhotoTranslateLarge
+{
+	from { transform:scale(.6,.6); margin:0px 55px; }
+	to	 { transform:scale(1,1); }
+}
+
+@-o-keyframes UserPhotoTranslateLarge
+{
+	from { transform:scale(.6,.6); margin:0px 55px; }
+	to	 { transform:scale(1,1); }
+}
+
+@-webkit-keyframes UserPhotoTranslateLarge
+{
+	from { transform:scale(.6,.6); margin:0px 55px; }
+	to	 { transform:scale(1,1); }
+}
+
+
+/* ========== Message Sent Animation =========== */
+
+.formOkAnimate {
+    animation: formOkAnimate 2.5s linear;
+    -o-animation: formOkAnimate 2.5s linear;
+    -ms-animation: formOkAnimate 2.5s linear;
+    -moz-animation: formOkAnimate 2.5s linear;
+    -webkit-animation: formOkAnimate 2.5s linear;
+}
+
+@keyframes formOkAnimate
+{
+    from { opacity: 1  }
+    25%  { opacity: .3 }
+    75%  { opacity: .3 }
+    100% { opacity: 1  }
+}
+
+/* ========== FadeIn Translate =========== */
+
+.fadeInTranslate {
+    animation: fadeInTranslate 1s forwards;
+    -o-animation: fadeInTranslate 1s forwards;
+    -ms-animation: fadeInTranslate 1s forwards;
+    -moz-animation: fadeInTranslate 1s forwards;
+    -webkit-animation: fadeInTranslate 1s forwards;
+}
+
+@keyframes fadeInTranslate
+{
+    from { opacity: 0; transform: translate(0,15px); }
+    to   { opacity: 1; transform: translate(0,0);    }
+}
+
+@-o-keyframes fadeInTranslate
+{
+    from { opacity: 0; transform: translate(0,15px); }
+    to   { opacity: 1; transform: translate(0,0);    }
+}
+
+@-ms-keyframes fadeInTranslate
+{
+    from { opacity: 0; transform: translate(0,15px); }
+    to   { opacity: 1; transform: translate(0,0);    }
+}
+
+@-moz-keyframes fadeInTranslate
+{
+    from { opacity: 0; transform: translate(0,15px); }
+    to   { opacity: 1; transform: translate(0,0);    }
+}
+
+@-webkit-keyframes fadeInTranslate
+{
+    from { opacity: 0; transform: translate(0,15px); }
+    to   { opacity: 1; transform: translate(0,0);    }
+}
+
+/* ========== Bounce =========== */
+
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-8px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-8px);}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-8px);}
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-8px);}
+}
+
+/* ========== Bounce =========== */
+
+.splash {
+    -webkit-animation: splash .5s forwards;
+	-moz-animation: splash .5s forwards;
+	-ms-animation: splash .5s forwards;
+	-o-animation: splash .5s forwards;
+	animation: splash .5s forwards;
+}
+
+@keyframes splash {
+    0 {transform: scale(0, 0);}
+    25% {transform: scale(1.4, 1.4);}
+    50% {transform: scale(.8, .8);}
+    25% {transform: scale(1.2, 1.2);}
+    100% {transform: scale(1, 1);}
+}
+
+@-o-keyframes splash {
+    0 {transform: scale(0, 0);}
+    25% {transform: scale(1.4, 1.4);}
+    50% {transform: scale(.8, .8);}
+    25% {transform: scale(1.2, 1.2);}
+    100% {transform: scale(1, 1);}
+}
+
+@-moz-keyframes splash {
+    0 {transform: scale(0, 0);}
+    25% {transform: scale(1.4, 1.4);}
+    50% {transform: scale(.8, .8);}
+    25% {transform: scale(1.2, 1.2);}
+    100% {transform: scale(1, 1);}
+}
+
+@-webkit-keyframes splash {
+    0 {transform: scale(0, 0);}
+    25% {transform: scale(1.4, 1.4);}
+    50% {transform: scale(.8, .8);}
+    25% {transform: scale(1.2, 1.2);}
+    100% {transform: scale(1, 1);}
+}

@@ -1,0 +1,884 @@
+/* ====================================================================
+   1. General
+   ==================================================================== */
+
+p, a, h5 {
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+.light {
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+#messageOkSpinner {
+    display: block;
+    position: absolute;
+    top:-140px;
+    left:-20px;
+}
+
+.closeModal {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+	z-index: 10;
+}
+
+.closeModal:focus {
+    outline:0;
+}
+
+.vAlign {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.noPadding {
+	padding: 0 !important;
+}
+
+.space {
+	margin-right: 10px;
+}
+
+.space-20 {
+	margin-right: 20px;
+}
+
+/* ====================================================================
+   2. ScrollBar
+   ==================================================================== */
+
+::-mz-scrollbar
+{
+	width: 10px;  /* for vertical scrollbars */
+	height: 10px; /* for horizontal scrollbars */
+}
+
+::-mz-scrollbar-track
+{
+	background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+::-mz-scrollbar-thumb
+{
+	background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;  /* for vertical scrollbars */
+	height: 10px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* ====================================================================
+   3. Buttons
+   ==================================================================== */
+
+.iconBtn {
+    background-color: #fff;
+    height:35px;
+    width: 35px;
+    margin-left: 5px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.iconBtn:active {
+    background-color: #f8f8f8;
+    outline: 0;
+}
+
+.iconBtn:focus {
+    outline: 0;
+}
+
+.btnAnchor {
+	text-align: center;
+	text-shadow: none;
+}
+
+.btnAnchor:hover, .btnAnchor:active, .btnAnchor:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.border-button {
+	background-color: transparent;
+	border: 1px solid #fa8800;
+	border-radius: 3px;
+	padding: 8px 15px;
+}
+
+.border-button:hover, .border-button:active {
+	color: #fff;
+}
+
+.BtnGeneral {
+    padding: 8px;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    font-family: 'Roboto', Sans-serif;
+		font-weight: 400;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.BtnGeneral:focus {
+    outline: 0;
+}
+
+.orangeBG {
+    background-color: #FA8800;
+    color: #fff;
+}
+
+.orangeBG:hover {
+    background-color: #f86414;
+}
+
+.orangeBtn {
+    background-color: #FA8800;
+    border-bottom: 3px solid #f86414;
+}
+
+.orangeBtn:active {
+    background-color: #D24E06;
+    border-bottom-color: #A3420F;
+}
+
+.orangeHover:hover {
+    background-color: #f86414;
+    color:#fff;
+    border-color:#BD4D11;
+}
+
+.greenBtn {
+    background-color: #5BB500;
+    border-bottom: 3px solid #4C9600;
+}
+
+.greenBtn:active {
+    background-color: #55A800;
+    border-bottom-color: #488F00;
+}
+
+.greenBG {
+    background-color: #5BB500;
+    color: #fff;
+}
+
+.greenBG:hover {
+    background-color: #55A800;
+}
+
+.greenHover:hover {
+    background-color: #55A800;
+    color:#fff;
+    border-color:#4C9600;
+}
+
+.blueBG {
+    background-color: #00BEFF;
+    color: #fff;
+}
+
+.blueBG:hover {
+    background-color: #00A5DE;
+}
+
+.blueBtn {
+    background-color: #00BEFF;
+    border-bottom: 3px solid #0090C2;
+}
+
+.blueBtn:active {
+    background-color: #00A5DE;
+    border-bottom-color: #007BA6;
+}
+
+.blueHover:hover {
+    background-color: #00BEFF;
+    color:#fff;
+    border-color:#0090C2;
+}
+
+.redBG {
+    background-color: #F76031;
+    color: #fff;
+}
+
+.redBG:hover {
+    background-color: #F76031;
+}
+
+.redBtn {
+    background-color: #F76031;
+    border-bottom: 3px solid #CC4F29;
+}
+
+.redBtn:active {
+    background-color: #E6582C;
+    border-bottom-color: #B34322;
+}
+
+.redHover:hover {
+    background-color: #F76031;
+    color:#fff;
+    border-color:#CC4F29;
+}
+
+.grayBG {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.grayBG:hover {
+    background-color: #ddd;
+}
+
+.grayBtn {
+    background-color: #ccc;
+    border-bottom:3px solid #aaa;
+}
+
+.grayBtn:active {
+    background-color: #bbb;
+    border-bottom:3px solid #999;
+}
+
+.grayHover:hover {
+    background-color: #ccc;
+    color:#fff;
+    border-color:#aaa;
+}
+
+.faceBtn {
+    background-color: #3b5998;
+    border-bottom: 3px solid #2B406C;
+    text-align: center;
+}
+
+.faceBtn:hover, .faceBtn:visited, .faceBtn:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.faceBtn:active {
+    background-color: #2B406C;
+    border-bottom-color: #233456;
+}
+
+.BtnFullWidth {
+    width: 100%;
+}
+
+.BtnHalfWidth {
+    width: 50%;
+}
+
+.BtnFullWidthModal {
+    width: 95%;
+    margin-left:2.5%;
+}
+
+.BtnHalfWidthModal {
+    width:45%;
+}
+
+.BtnHalfWidthModal:last-child {
+    margin-left:2.5%;
+}
+
+.BtnSmallWidth {
+    padding: 5px 15px;
+    margin-left: 3%;
+}
+
+.pagination .active a {
+	background-color: #fa8800;
+	border-color: #f86414;
+	color: #fff !important;
+}
+
+.pagination .active a:hover {
+	background-color: #fa8800;
+	border-color: #f86414;
+}
+
+.pagination .page a, .pagination .page a:hover, .pagination .prev a, .pagination .prev a:hover, .pagination .next a, .pagination .next a:hover,
+.pagination .first a, .pagination .first a:hover, .pagination .last a, .pagination .last a:hover {
+	color: #fa8800;
+}
+
+.pagination .disabled a {
+	color: #999 !important;
+}
+
+/* ====================================================================
+   4. Inputs
+   ==================================================================== */
+
+input[type="text"], input[type="password"] {
+    border-radius: 3px !important;
+    border: 1px solid #ccc;
+}
+
+input[name="daterange"] {
+    text-align:center;
+    padding: 5px 10px;
+}
+
+label[name="taskDate"] {
+    margin:5px 14px;
+}
+
+input[disabled="true"] {
+    color:#ccc;
+}
+
+.performanceDateInput {
+    width: 120px;
+    text-align:center;
+    padding: 5px 10px;
+    margin: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+/* Widths */
+
+.bootstrap-select {
+    width: 100% !important;
+}
+
+.InputFullModalWidth {
+    width: 100%;
+}
+
+/* Input Switch */
+
+.switchBtn {
+    float: ;
+    margin-left: -2px;
+}
+
+input.switch:empty {
+	margin-left: -999px;
+}
+
+input.switch:empty ~ label {
+	position: relative;
+	float: left;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.switch:empty ~ label:before {
+    border-radius: 3px;
+}
+
+input.switch:empty ~ label:before, input.switch:empty ~ label:after {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+	width: 4.4em;
+	background-color: #d8d8d8;
+    box-shadow: inset 0 0.2em 0 rgba(0,0,0,0.3);
+	-webkit-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+}
+
+input.switch:empty ~ label:after {
+	width: 2em;
+	top: 0.1em;
+	bottom: 0.1em;
+	margin-left: 0.1em;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: inset 0 -0.2em 0 rgba(0,0,0,0.4);
+}
+
+input.switch:checked ~ label:before {
+	background-color: #f86414;
+}
+
+input.switch:checked ~ label:after {
+	margin-left: 2.3em;
+	box-shadow: inset 0 -0.2em 0 #BD4D11;
+}
+
+/* ====================================================================
+   4. Various
+   ==================================================================== */
+
+.miniIcon {
+    font-size: 10px;
+    margin-top: -1px;
+}
+
+/* ====================================================================
+   5. Dropdown
+   ==================================================================== */
+
+#messagesDropdown > .notificationsDropdownBox {
+    right: 50px;
+}
+
+.groovepanelDropdownMenu > .notificationsDropdownBox {
+    top: 36px;
+}
+
+.dropdownMenu, .notificationsDropdownMenu {
+    list-style: none;
+    margin-right: 5px;
+    display:inline-block;
+}
+
+.dropdownMenu:hover > .dropdownBox {
+    display: block;
+}
+
+.groovepanelDropdownMenu:hover > .notificationsDropdownBox {
+    display: block;
+}
+
+.dropdownBox, .notificationsDropdownBox {
+    position: absolute;
+    text-align: left;
+    display: none;
+    right: 0;
+    top: 52px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+    background-color: #444;
+    border: 1px solid #333;
+    z-index: 9;
+}
+
+.notificationsList {
+    max-height: 186px;
+    overflow-y: auto;
+}
+
+.viewNotificationBtn i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.dropdownBox:hover {
+    display: block;
+}
+
+.dropdownList {
+    display: inline-table;
+}
+
+.dropdownOptionTitle {
+    color: #ccc !important;
+    font-size: 11px;
+    list-style: none;
+    font-size: 11px;
+    padding: 5px 20px 10px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdownOption, .dropdownOptionCreateProject, .notificationDropdownOption {
+  list-style: none;
+ /* padding: 5px 0 !important;*/
+  border-radius: 3px;
+}
+
+.notificationDropdownOption {
+    width: 305px;
+}
+
+.notificationDropdownOption a div {
+    font-size: 11px;
+}
+
+.dropdownOption:hover, .notificationDropdownOption:hover {
+    background-color: #ddd;
+}
+
+.dropdownOption:hover > a, .notificationDropdownOption:hover > a {
+    color: #444;
+}
+
+.dropdownOption:active > a, .notificationDropdownOption:active > a {
+    text-decoration: none;
+}
+
+.dropdownOption:focus > a, .notificationDropdownOption:focus > a {
+    text-decoration: none;
+}
+
+.noNotification {
+    width: 137px;
+}
+
+.dropdownOptionCreateProject a {
+    margin: 0 10px;
+    padding: 5px 40px;
+}
+
+.dropdownOptionCreateProject a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.dropdownOptionCreateProject a:active {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.dropdownOption a, .notificationDropdownOption a {
+    color: #ccc;
+    font-size: 13px;
+    padding: 5px 20px;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.dropdownOption a:hover, .notificationDropdownOption a:hover {
+    color: #333;
+}
+
+.dropdownMenuPhoto {
+	height:20px;
+	width:20px;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.noLogoDropdownMenu {
+    display: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-menu .divider {
+	background-color: #777;
+}
+
+.dropdown-header {
+	color: #ccc;
+}
+
+/* ====================================================================
+   6. Header
+   ==================================================================== */
+
+.usernameFirstLetter {
+	display: none;
+	background-color: #fa8800;
+	border-radius: 5px;
+	height: 45px;
+	width: 45px;
+	align-items: center;
+	justify-content: center;
+}
+
+.usernameFirstLetterDropdown {
+    display: none;
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    background-color: #fa8800;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    top: -3px;
+    margin-bottom: -8px;
+}
+
+.firstLetterGroup {
+    display: flex;
+}
+
+.usernameFirstLetterDropdown .firstLetterGroup {
+    font-size: 12px;
+}
+
+.usernameFirstLetter p, .usernameFirstLetterDropdown p {
+    color: #fff;
+		margin-bottom: 0;
+}
+
+.dropdownOption .usernameFirstLetter {
+	height: 20px;
+	width: 20px;
+}
+
+.dropdownOption .usernameFirstLetter .firstLetterGroup p {
+	font-size: 11px;
+}
+
+/* ====================================================================
+   7. Modals
+   ==================================================================== */
+
+ .modal-open-panel {
+ 	overflow:hidden
+ }
+
+ .modal-panel {
+ 	display:none;
+ 	position:fixed;
+ 	top:0;
+ 	right:0;
+ 	bottom:0;
+ 	left:0;
+ 	z-index:1050;
+ 	-webkit-overflow-scrolling:touch;
+ 	outline:0;
+     overflow-y: auto;
+ }
+
+ .modal.fade .modal-dialog-panel {
+ 	-webkit-transform:translate(0, -25%);
+ 	-ms-transform:translate(0, -25%);
+ 	transform:translate(0, -25%);
+ 	-webkit-transition:-webkit-transform 0.1s ease-out;
+ 	-moz-transition:-moz-transform 0.1s ease-out;
+ 	-o-transition:-o-transform 0.1s ease-out;
+ 	transition:transform 0.1s ease-out;
+ }
+
+ .modal.in .modal-dialog-panel {
+ 	-webkit-transform:translate(0, 0);
+ 	-ms-transform:translate(0, 0);
+ 	transform:translate(0, 0)
+ }
+
+ .modal-dialog-panel {
+ 	position:relative;
+ 	width:auto;
+ 	margin:10px;
+ }
+
+ .modal-content-panel {
+ 	top:50px;
+     padding: 20px;
+     padding-right: 20px;
+     background-color:#fff;
+     border:10px solid rgba(255,255,255,.3);
+     border-radius: 3px;
+ 	position:relative;
+ 	background-clip:padding-box;
+ 	outline:none;
+     box-shadow: 0 2px 4px rgba(0,0,0,.2);
+ }
+
+ .modal-backdrop {
+ 	position:fixed;
+ 	top:0;
+ 	right:0;
+ 	bottom:0;
+ 	left:0;
+ 	z-index:1040;
+ 	background-color:#000;
+ }
+
+ .modal-backdrop.fade {
+ 	opacity:0;
+ 	filter:alpha(opacity=0);
+ }
+
+ .modal-backdrop.in {
+ 	opacity:.8;
+ 	filter:alpha(opacity=80);
+ }
+
+ .modal-header-panel {
+ 	min-height:16.42857143px;
+     text-align: center;
+ }
+
+ .modal-header-panel .close {
+ 	margin-top:-2px;
+ }
+
+ .modal-title-panel {
+     display: inline;
+     font-size: 13px;
+ 	color:#333 !important;
+     width: 100%;
+ }
+
+ .modal-title-panel {
+     font-size: 20px;
+ }
+
+ .modal-body-panel {
+ 	position:relative;
+     padding: 10px 10px 0;
+ }
+
+ .modal-footer-panel {
+ 	margin-top:15px;
+ 	padding:19px 20px 20px;
+ 	text-align:right;
+ 	border-top:1px solid #e5e5e5
+ }
+
+ .modal-footer-panel .btn+.btn-panel {
+ 	margin-left:5px;
+ 	margin-bottom:0
+ }
+
+ .modal-footer-panel .btn-group-panel .btn+.btn-panel {
+ 	margin-left:-1px
+ }
+
+ .modal-footer-panel .btn-block+.btn-block-panel {
+ 	margin-left:0
+ }
+
+ .public-profile-modal {
+	 padding: 15px 5px 5px;
+ }
+
+.public-profile-modal .modal-header-panel {
+	padding: 30px 0 20px;
+}
+
+.public-profile-modal .modal-header-panel .modal-title-panel {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.public-profile-modal .modal-body-panel {
+	padding: 0 10px 10px;
+	text-align: justify;
+}
+
+/* ====================================================================
+   8. Accordion
+   ==================================================================== */
+
+.panel-group {
+	flex-direction: column;
+}
+
+.ui-accordion {
+	display: flex;
+	flex-direction: column;
+	/*padding: 10px 25px;*/
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.ui-accordion .panel-body {
+  padding: 0 25px;
+}
+
+.ui-accordion .ui-accordion-header {
+	font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  display: flex;
+  padding: 20px;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui-accordion-header:active, .ui-accordion-header:focus, .ui-accordion-header:hover {
+	outline: 0;
+	background-color: #fff;
+}
+
+.ui-accordion .ui-accordion-header p {
+	font-size: 12px;
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0;
+}
+
+.ui-accordion .ui-accordion-header span i {
+	font-size: 20px;
+}
+
+.ui-accordion .ui-accordion-content {
+	display: none;
+	margin-top: 15px;
+}
+
+
+@media screen and (max-width: 710px) {
+
+.BtnGeneral {
+  padding: 13px;
+	font-size: 15px;
+}
+
+.panel-group {
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: inherit;
+}
+
+.ui-accordion {
+	width: 95%;
+}
+
+.ui-accordion .ui-accordion-header {
+	position: relative;
+}
+
+.ui-accordion .ui-accordion-header span {
+	position: absolute;
+	right: 20px;
+}
+
+.closeModal {
+  position: absolute;
+}
+
+}
